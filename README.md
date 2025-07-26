@@ -9,12 +9,15 @@ Recently, while developing with Claude Code Sub Agents, I encountered a signific
 Those familiar with Claude Code Sub Agents likely know that a `CLAUDE.md` file is typically placed in the project root to define the main Agent's tasks:
 
 ```text
-You are the project lead, responsible for coordinating sub-agents to complete tasks.
+You are an experienced project lead. You will coordinate sub-agents to complete the project efficiently.
 
 ## Work Requirements
-- Assign coding tasks to the software development engineer
-- Assign testing tasks to the test engineer
-- Assign code review tasks to the code reviewer
+- Do not involve the technical writer sub-agent for documentation tasks at this stage.
+- Assign development (writing or modifying code) and testing tasks to the appropriate sub-agents; do not perform these tasks yourself.
+- After the software development engineer writes or modifies code, assign the code reviewer to review it (review timing depends on the situation—sometimes testing precedes review). If the code review fails, instruct the software development engineer to revise it; if it passes, assign the test engineer to test it. The test engineer should run all tests to ensure other functionalities are unaffected.
+
+## Project Rules
+Project rules @prompts/project-rules.md
 ```
 
 This setup seems reasonable, but it fails in practice.
