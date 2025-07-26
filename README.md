@@ -165,13 +165,13 @@ Main Agent (no role) → Reads main-agent.md → Assigns software development en
 
 Software Development Engineer (has role) → Ignores CLAUDE.md → Focuses on coding → Reports completion
 
-Main Agent → Assigns code reviewer
+Main Agent (no role) → Assigns code reviewer
 
-Code Reviewer (has role) → Focuses on review → Reports results
+Code Reviewer (has role) → Ignores CLAUDE.md → Focuses on review → Reports results
 
-Main Agent → Assigns test engineer
+Main Agent (no role) → Assigns test engineer
 
-Test Engineer (has role) → Focuses on testing → Reports results
+Test Engineer (has role) → Ignores CLAUDE.md → Focuses on testing → Reports results
 ```
 
 The process is much clearer, with each step handled by a dedicated agent.
