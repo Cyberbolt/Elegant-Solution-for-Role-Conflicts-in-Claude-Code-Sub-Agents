@@ -27,7 +27,7 @@ As a result:
 - The test engineer does the same, trying to manage others.
 - The code reviewer also assumes a leadership role...
 
-This leads to infinite recursive calls, causing the entire system to break down.
+This causes the entire system to break down. Sub-agents mistakenly believe they are managers and start generating task assignment instructions instead of doing their actual work, resulting in nothing getting accomplished. (Note that Claude Code Sub Agents currently doesn't support sub-agents calling other sub-agents, so these calls fail anyway.)
 
 ## The Solution
 
