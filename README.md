@@ -1,5 +1,7 @@
 # Elegant Solution for Role Conflicts in Claude Code Sub Agents
 
+[中文版](./README.zh-CN.md)
+
 While working with Claude Code Sub Agents, I encountered a frustrating issue. After some research, I found a decent solution worth sharing.
 
 ## The Problem
